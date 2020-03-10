@@ -1,0 +1,362 @@
+package com.abc.rateOfIntrest;
+
+import java.util.Scanner;
+interface Admin
+{
+	void input();
+	void displaylist();
+	void displaycourse();
+}
+abstract class Allvalues implements Admin
+{
+	public static int cse=20,it=20,eie=20,eee=20,ece=20;
+	String cse_n[]=new String[20];
+	int cse_a[]=new int[20];
+	String cse_c[]=new String[20];
+	int cse_chq[]=new int[20];
+	String cse_an[]=new String[20];
+	String it_n[]=new String[20];
+	int it_a[]=new int[20];
+	String it_c[]=new String[20];
+	int it_chq[]=new int[20];
+	String it_an[]=new String[20];
+	String eie_n[]=new String[20];
+	int eie_a[]=new int[20];
+	String eie_c[]=new String[20];
+	int eie_chq[]=new int[20];
+	String eie_an[]=new String[20];
+	String eee_n[]=new String[20];
+	int eee_a[]=new int[20];
+	String eee_c[]=new String[20];
+	int eee_chq[]=new int[20];
+	String eee_an[]=new String[20];
+	String ece_n[]=new String[20];
+	int ece_a[]=new int[20];
+	String ece_c[]=new String[20];
+	int ece_chq[]=new int[20];
+	String ece_an[]=new String[20];
+	String ece_m[]=new String[30];
+	String ece_co[]=new String[20];
+	String eie_m[]=new String[30];
+	String eie_co[]=new String[20];
+	String eee_m[]=new String[30];
+	String eee_co[]=new String[20];
+	String it_m[]=new String[30];
+	String it_co[]=new String[20];
+	String cse_m[]=new String[30];
+	String cse_co[]=new String[20];
+	String cse_cu[]=new String[20];
+	String it_cu[]=new String[20];
+	String eee_cu[]=new String[20];
+	String eie_cu[]=new String[20];
+	String ece_cu[]=new String[20];
+	abstract public void input();
+	abstract public void displaylist();
+	abstract public void displaycourse();
+}
+abstract class Display extends Allvalues
+{
+	public void displaycourse()
+	{
+		System.out.println("----------------BRANCHES WE OFFER------------------");
+		System.out.println();
+		System.out.println("(1)CSE "+cse+" \t (2)IT "+it+" \t (3)EIE "+eie+" \n(4)EEE "+eee+" \t (5)ECE "+ece);
+	}
+}
+class Inputvalue extends Display
+{
+	Scanner sc=new Scanner(System.in);
+	public static int n=0,j=0,k=0,l=0,m=0;
+	public void input()
+	{
+		System.out.println();
+		System.out.println("Select the course to get admission :");
+		int y=sc.nextInt();
+		{
+			switch(y)
+			{
+			case 1:
+				if(n==20)
+				{
+					System.out.println("Admission completed");
+					break;
+				}
+				System.out.println("-----------CSE ADMISSION DETAILS-----------");
+				System.out.println();
+				System.out.print("Name                  : ");
+				cse_n[n]=sc.next();
+				System.out.print("Mobile Number         : ");
+				cse_m[n]=sc.next();
+				System.out.print("Age                   : ");
+				cse_a[n]=sc.nextInt();
+				System.out.print("Course                : ");
+				cse_cu[n]=sc.next();
+				System.out.print("Highest Qualification : ");
+				cse_c[n]=sc.next();
+				System.out.print("College of H.Q        : ");
+				cse_co[n]=sc.next();
+				System.out.print("Percentage in H.Q     : ");
+				cse_chq[n]=sc.nextInt();
+				System.out.print("Aadhar Number         : ");
+				cse_an[n]=sc.next();
+				System.out.println();
+				System.out.println("----------------PLEASURE TO HAVE U IN ABC----------------");
+				System.out.println();
+				n++;
+				cse--;
+				break;
+			case 2:
+				if(j==20)
+				{
+					System.out.println("Admission completed");
+					break;
+				}	
+				System.out.println("-----------IT ADMISSION DETAILS-----------");
+				System.out.println();
+				System.out.print("Name                  : ");
+				it_n[j]=sc.next();
+				System.out.print("Mobile Number         : ");
+				it_m[j]=sc.next();
+				System.out.print("Age                   : ");
+				it_a[j]=sc.nextInt();
+				System.out.print("Course                : ");
+				it_cu[j]=sc.next();
+				System.out.print("Highest Qualification : ");
+				it_c[j]=sc.next();
+				System.out.print("College of H.Q        : ");
+				it_co[j]=sc.next();
+				System.out.print("Percentage in H.Q     : ");
+				it_chq[j]=sc.nextInt();
+				System.out.print("Aadhar Number         : ");
+				it_an[j]=sc.next();
+				System.out.println();
+				System.out.println("----------------PLEASURE TO HAVE U IN ABC----------------");
+				System.out.println();
+				j++;
+				it--;
+				break;
+			case 3:
+				if(k==20)
+				{
+					System.out.println("Admission completed");
+					break;
+				}	
+				System.out.println("----------- EIE ADMISSION DETAILS-----------");
+				System.out.println();
+				System.out.print("Name                  : ");
+				eie_n[k]=sc.next();
+				System.out.print("Mobile Number         : ");
+				eie_m[k]=sc.next();
+				System.out.print("Age                   : ");
+				eie_a[k]=sc.nextInt();
+				System.out.print("Course                : ");
+				eie_cu[k]=sc.next();
+				System.out.print("Highest Qualification : ");
+				eie_c[k]=sc.next();
+				System.out.print("College of H.Q        : ");
+				eie_co[k]=sc.next();
+				System.out.print("Percentage in H.Q     : ");
+				eie_chq[k]=sc.nextInt();
+				System.out.print("Aadhar Number         : ");
+				eie_an[k]=sc.next();
+				System.out.println();
+				System.out.println("----------------PLEASURE TO HAVE U IN ABC----------------");
+				System.out.println();
+				eie--;
+				k++;
+				break;
+			case 4:
+				if(l==20)
+				{
+					System.out.println("Admission completed");
+					break;
+				}	
+				System.out.println("-----------EEE ADMISSION DETAILS-----------");
+				System.out.println();
+				System.out.print("Name                  : ");
+				eee_n[l]=sc.next();
+				System.out.print("Mobile Number         : ");
+				eee_m[l]=sc.next();
+				System.out.print("Age                   : ");
+				eee_a[l]=sc.nextInt();
+				System.out.print("Course                : ");
+				eee_cu[l]=sc.next();
+				System.out.print("Highest Qualification : ");
+				eee_c[l]=sc.next();
+				System.out.print("College of H.Q        : ");
+				eee_co[l]=sc.next();
+				System.out.print("Percentage in H.Q     : ");
+				eee_chq[l]=sc.nextInt();
+				System.out.print("Aadhar Number         : ");
+				eee_an[l]=sc.next();
+				System.out.println();
+				System.out.println("----------------PLEASURE TO HAVE U IN ABC----------------");
+				System.out.println();
+				eee--;l++;
+				break;
+			case 5:
+				if(m==20)
+				{
+					System.out.println("Admission completed");
+					break;
+				}	
+				System.out.println("-----------ECE ADMISSION DETAILS-----------");
+				System.out.println();
+				System.out.print("Name                  : ");
+				ece_n[m]=sc.next();
+				System.out.print("Mobile Number         : ");
+				ece_m[m]=sc.next();
+				System.out.print("Age                   : ");
+				ece_a[m]=sc.nextInt();
+				System.out.print("Course                : ");
+				ece_cu[m]=sc.next();
+				System.out.print("Highest Qualification : ");
+				ece_c[m]=sc.next();
+				System.out.print("College of H.Q        : ");
+				ece_co[m]=sc.next();
+				System.out.print("Percentage in H.Q     : ");
+				ece_chq[m]=sc.nextInt();
+				System.out.print("Aadhar Number         : ");
+				ece_an[m]=sc.next();
+				System.out.println();
+				System.out.println("----------------PLEASURE TO HAVE U IN ABC----------------");
+				System.out.println();
+				ece--;m++;
+				break;
+			default:
+				System.out.println("Enter valid input ");
+				input();
+			}
+		}
+	}
+	public void displaylist()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println();
+		System.out.println("Select the course to get student details of completed admissions :");
+		int x=sc.nextInt();
+		switch(x)
+		{
+		case 1:
+			System.out.println(cse_n[0]);
+			for(int i=0;i<20-cse;i++)
+			{
+				System.out.println("-------CSE STUDENT["+(i+1)+"] DETAILS-------");
+				System.out.println("Name                  : "+cse_n[i]);
+				System.out.println("Mobile Number         : "+cse_m[i]);
+				System.out.println("Age                   : "+cse_a[i]);
+				System.out.println("course                : "+cse_cu[i]);
+				System.out.println("Highest Qualification : "+cse_c[i]);
+				System.out.println("College of H.Q        : "+cse_co[i]);
+				System.out.println("Percentage in H.Q     : "+cse_chq[i]);
+				System.out.println("Aadhar Number         : "+cse_an[i]);
+				System.out.println();
+			}
+			break;
+		case 2:
+			for(int i=0;i<20-it;i++)
+			{
+				System.out.println("-------IT STUDENT["+(i+1)+"] DETAILS-------");
+				System.out.println("Name                  : "+it_n[i]);
+				System.out.println("Mobile Number         : "+it_m[i]);
+				System.out.println("Age                   : "+it_a[i]);
+				System.out.println("course                : "+it_cu[i]);
+				System.out.println("Highest Qualification : "+it_c[i]);
+				System.out.println("College of H.Q        : "+it_co[i]);
+				System.out.println("Percentage in H.Q     : "+it_chq[i]);
+				System.out.println("Aadhar Number         : "+it_an[i]);
+				System.out.println();
+			}
+			break;
+		case 3:
+			for(int i=0;i<20-eie;i++) 
+			{
+				System.out.println("-------EIE STUDENT["+(i+1)+"] DETAILS-------");
+				System.out.println("Name                  : "+eie_n[i]);
+				System.out.println("Mobile Number         : "+eie_m[i]);
+				System.out.println("Age                   : "+eie_a[i]);
+				System.out.println("course                : "+eie_cu[i]);
+				System.out.println("Highest Qualification : "+eie_c[i]);
+				System.out.println("College of H.Q        : "+eie_co[i]);
+				System.out.println("Percentage in H.Q     : "+eie_chq[i]);
+				System.out.println("Aadhar Number         : "+eie_an[i]);
+				System.out.println();
+			}
+			break;
+		case 4:
+			for(int i=0;i<20-eee;i++) 
+			{
+				System.out.println("-------EEE STUDENT["+(i+1)+"] DETAILS-------");
+				System.out.println("Name                  : "+eee_n[i]);
+				System.out.println("Mobile Number         : "+eee_m[i]);
+				System.out.println("Age                   : "+eee_a[i]);
+				System.out.println("course                : "+eee_cu[i]);
+				System.out.println("Highest Qualification : "+eee_c[i]);
+				System.out.println("College of H.Q        : "+eee_co[i]);
+				System.out.println("Percentage in H.Q     : "+eee_chq[i]);
+				System.out.println("Aadhar Number         : "+eee_an[i]);
+				System.out.println();
+			}
+			break;
+		case 5:
+			for(int i=0;i<20-ece;i++)
+			{
+				System.out.println("-------ECE STUDENT["+(i+1)+"] DETAILS-------");
+				System.out.println("Name                  : "+ece_n[i]);
+				System.out.println("Mobile Number         : "+ece_m[i]);
+				System.out.println("Age                   : "+ece_a[i]);
+				System.out.println("course                : "+ece_cu[i]);
+				System.out.println("Highest Qualification : "+ece_c[i]);
+				System.out.println("College of H.Q        : "+ece_co[i]);
+				System.out.println("Percentage in H.Q     : "+ece_chq[i]);
+				System.out.println("Aadhar Number         : "+ece_an[i]);
+				System.out.println();
+			}
+			break;
+		default:
+			System.out.println("Invalid input,Enter a valid input");
+		}
+	}
+}
+public class Project{
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Allvalues ref=new Inputvalue();
+		System.out.println("-------WELCOME TO ABC FOR TECH TRAINING-------");
+		int n1;
+		do {
+			String enterkey = " ";
+			System.out.print(enterkey);
+			enterkey = sc.nextLine();
+			System.out.print(enterkey);
+			if(enterkey.equals(""))
+			{
+				System.out.println("-------------------MAIN MENU------------------");
+				System.out.println("(1)Admissions                 (2)Student details");
+				System.out.println("                 (3)Exit                        ");
+				System.out.println();
+			}			
+			int n=sc.nextInt();
+			n1=n;
+			switch(n)
+			{
+			case 1:
+				ref.displaycourse();
+				ref.input();
+				break;
+			case 2:
+				ref.displaycourse();
+				ref.displaylist();
+				break;
+			case 3:
+				System.out.println("--------------THANK YOU FOR VISITING US-------------");
+				break;
+			default:
+				System.out.println("Invalid input");
+				break;
+			}
+		}while(n1!=3);
+	}
+}
+
